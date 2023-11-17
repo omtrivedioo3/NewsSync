@@ -20,5 +20,12 @@ Explore the power of MERN stack and bring real-time news to your fingertips! Che
 - Node.js
 - Bcrypt for password encryption
 - nodemailer
-  
+
+  📖 How to Use:
+1. Clone the repository
+2. Install dependencies using npm install
+3. Configure MongoDB connection
+4. Run the application using npm start
+
+Feel free to contribute or report issues. Happy coding!
 
