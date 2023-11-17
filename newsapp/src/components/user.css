@@ -1,0 +1,25 @@
+.user {
+    width: 400px;
+    height: 350px;
+    background: #fff;
+    border: 2px solid #092247;
+    box-shadow: 10px 15px 10px rgb(0 0 0 / 10%), 0 8px 10px rgb(0 0 0 / 10%);
+    border-radius: 30px;
+    margin: 100px;
+    margin-left: 0%;
+    margin-top: 40%;
+
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    }
