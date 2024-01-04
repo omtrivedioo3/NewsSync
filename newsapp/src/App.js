@@ -9,14 +9,17 @@ import News from "./components/News";
 import PasswordForm from "./components/PasswordForm";
 import Register from "./components/Regester";
 import User from "./components/User";
+
 // iPVkXuK23PBILVBJ
-// FwTDfh2eV057WasA -->database
+// FwTDfh2eV057WasA --> database
+
 function App() {
   const [user, setLoginUser] = useState({});
   const pageSize = 15;
   const apiKey = process.env.REACT_APP_NEWS_API;
   const [progress, setProgress] = useState(0);
   const [profile, setProfile] = useState(true);
+
   return (
     <div className="App">
       <Router>

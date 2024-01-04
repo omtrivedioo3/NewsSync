@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./login.css";
 import { useNavigate } from "react-router-dom";
+import "./login.css";
+const BASE_URL = process.env.BASE_URL
 
 const Login = ({ setLoginUser }) => {
   const Navigate = useNavigate();
@@ -83,10 +84,10 @@ const Login = ({ setLoginUser }) => {
                     Remember me
                   </label>
                 </div>
-                <a href="#!" onClick={()=>{
-                   Navigate("/changePassword");
+                <a href="#!" onClick={() => {
+                  Navigate("/changePassword");
                 }
-              } className="text-body">
+                } className="text-body">
                   Forgot password?
                 </a>
               </div>

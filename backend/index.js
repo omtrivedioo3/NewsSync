@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcrypt");
 const userRouter = require("./routes/user")
-
+const PORT = process.env.PORT
 
 const app = express();
 app.use(express.json());

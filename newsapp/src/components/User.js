@@ -55,7 +55,7 @@ function User({ setLoginUser, setProfile, profile, user }) {
                     <hr className="mt-0 mb-4" />
                     <div className="row pt-1">
                       <div className="col-6 mb-3">
-                        <h6>Recent</h6>
+                        {/* <h6>Recent</h6> */}
                         <p className="text-muted">
                           <button
                             type="button"
@@ -70,7 +70,7 @@ function User({ setLoginUser, setProfile, profile, user }) {
                         </p>
                       </div>
                       <div className="col-6 mb-3">
-                        <h6>Most Viewed</h6>
+                        {/* <h6>Most Viewed</h6> */}
                         <p className="text-muted">
                           <button
                             type="button"
