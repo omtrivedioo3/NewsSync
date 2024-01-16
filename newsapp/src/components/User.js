@@ -6,6 +6,8 @@ function User({ setLoginUser, setProfile, profile, user }) {
   const update = () => {
     setProfile(!profile);
   };
+  // const Navigate = useNavigate();
+
   useEffect(() => {
     update();
   }, []);

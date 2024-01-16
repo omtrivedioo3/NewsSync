@@ -1,8 +1,8 @@
+import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
+import InfiniteScroll from "react-infinite-scroll-component";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
-import PropTypes from "prop-types";
-import InfiniteScroll from "react-infinite-scroll-component";
 const News = (props) => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -40,11 +40,9 @@ const News = (props) => {
     updateNews();
   };
   const fetchMoreData = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?country=${
-      props.country
-    }&category=${props.category}&apiKey=${props.apiKey}&page=${
-      page + 1
-    }&pageSize=${props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${props.country
+      }&category=${props.category}&apiKey=${props.apiKey}&page=${page + 1
+      }&pageSize=${props.pageSize}`;
     setPage(page + 1);
     let data = await fetch(url);
     let parsedData = await data.json();
